@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'YiSunShinDotumM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YiSunShinDotumM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'YiSunShinDotumM', sans-serif;
+    font-weight: bold;
+    background-color:#fffff5;
+    color: #333; /* Example text color */
+    line-height: 1.6;
+}
+
+header h1 {
+    font-family: 'YiSunShinDotumM', sans-serif;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+header h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-weight: normal;
+    font-size: 32px;
+    color: #f0f0f0;
+    border: 0px; border-radius: 16px; background-color: #252525; margin: 10px; padding: 0px;
+    width: 380px; margin-left: auto; margin-right: auto;
+}
+
+.introduction {
+    font-family: 'YiSunShinDotumM', sans-serif;
+    font-weight: normal;
+    padding: 2rem;
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0rem auto;
+    width: 80%;
+}
+
+select {
+    margin: 0rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-family: 'YiSunShinDotumM', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+button#startTest {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background-color: #E0EBFC;
+    color: #3762CC;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'YiSunShinDotumM', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+button#startSimpleTest {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background-color: #E0EBFC;
+    color: #3762CC;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'YiSunShinDotumM', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+button#startTest:hover {
+    background-color: #3762CC;
+}
+
+button#startSimpleTest:hover {
+    background-color: #3762CC;
+}
+
+@keyframes floatAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.floating {
+    animation: floatAnimation 3s ease-in-out infinite;
+}

@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'YiSunShinDotumM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YiSunShinDotumM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color:#fffff5;
+    font-family: 'YiSunShinDotumM', monospace;
+    text-align: center;
+    font-weight: bold;
+}
+
+header h1 {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'YiSunShinDotumM', sans-serif;
+}
+
+.chart-container {
+    width: 50%;
+    margin: 20px auto;
+}
+
+.additional-scores p{
+    margin: 20px;
+    font-family: 'YiSunShinDotumM';
+    font-weight: normal;
+    display: inline;
+    margin: 5px;
+}
+
+#next {
+    padding: 10px 15px;
+    background-color: #E0EBFC;
+    color: #3762CC;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-family: 'YiSunShinDotumM';
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#drugRiskTestButton {
+    padding: 10px 15px;
+    background-color: #E0EBFC;
+    color: #3762CC;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-family: 'YiSunShinDotumM';
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 25px;
+}
+
+#drugRiskTestButton:hover {
+    background-color: #3762CC;
+}

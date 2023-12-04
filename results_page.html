@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Results</title>
+    <link rel="stylesheet" href="css/results_styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gaegu&family=Nanum+Gothic+Coding&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>성격 유형 테스트 결과</h1>
+    </header>
+
+    <div class="chart-container">
+        <canvas id="radarChart"></canvas>
+    </div>
+
+    <div class="additional-scores">
+        <p id="bisScore">BIS-11 점수: &nbsp;</p>
+        <p id="impScore">ImpSS 점수: &nbsp;</p>
+    </div>
+
+    <button id="drugRiskTestButton">약물 위험도 테스트</button>
+    <p></p>
+    <button id = 'next', onclick="window.location.href='final_page.html?E=17&A=17&C=11&N=11&O=14&BIS=6&IMP=8&risk=0.3633&drug1=Amphet&drug2=Amyl&drug3=Nicotine'">다음 페이지로 건너뛰기(테스트용)</button>
+
+    <p></p>
+    <div id="error-message" style="color: red;"></div>
+
+    <script src="js/results_script.js"></script>
+</body>
+</html>

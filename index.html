@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성격 유형 분석을 통한 약물 위험 예측</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gaegu&family=Nanum+Gothic+Coding&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2>성격 유형으로 알아보는</h2>
+        <h1>나의 약물 위험도</h1>
+    </header>
+    <section class="introduction">
+        <img src="img/main_drug.png" alt="main_img" width="300">
+        <p>성격 유형이 행동과 선택에 결정적인 영향을 미친다고 해요.<br>성격 유형에 따른 약물 사용에 대한 위험성과 소비 위험 종류를 검사해 봐요. </p>
+    </section>
+    <section class="input-section">
+        <select id="age" name="age">
+            <option value="0.03461">나이 선택</option>
+            <option value="-0.95197">18-24</option>
+            <option value="-0.07854">25-34</option>
+            <option value="0.49788">35-44</option>
+            <option value="1.09449">45-54</option>
+            <option value="1.82213">55-64</option>
+            <option value="2.59171">65+</option>
+        </select>
+
+        <!-- <select id="gender" name="gender">
+            <option value="-0.00026">성별 선택</option>
+            <option value="0.48246">여성</option>
+            <option value="-0.48246">남성</option>
+        </select> -->
+
+        <select id="education" name="education">
+            <option value="-0.00379">교육 수준 선택</option>
+            <option value="-2.43591">16세 이전 학교 졸업</option>
+            <option value="-1.73790">16세에 학교 졸업</option>
+            <option value="-1.43719">17세에 학교 졸업</option>
+            <option value="-1.22751">18세에 학교 졸업</option>
+            <option value="-0.61113">대학 또는 대학교 중퇴</option>
+            <option value="-0.05921">전문 자격증/ 디플로마</option>
+            <option value="0.45468">대학 학위</option>
+            <option value="1.16365">석사 학위</option>
+            <option value="1.98437">박사 학위</option>
+        </select>
+
+        <select id="country" name="country">
+            <option value="0.35554">국가 선택</option>
+            <option value="-0.09765">호주</option>
+            <option value="0.24923">캐나다</option>
+            <option value="-0.46841">뉴질랜드</option>
+            <option value="-0.28519">기타</option>
+            <option value="0.21128">아일랜드 공화국</option>
+            <option value="0.96082">영국</option>
+            <option value="-0.57009">미국</option>
+        </select>
+    </section>
+    
+    <button id="startSimpleTest">테스트 시작(약 1분)</button>
+    <button id="startTest">테스트 시작(약 5분)</button>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

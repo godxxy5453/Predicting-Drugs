@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'YiSunShinDotumM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YiSunShinDotumM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'YiSunShinDotumM', monospace;
+    font-weight: bold;
+    background-color:#fffff5;
+    color: #333;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'YiSunShinDotumM', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.progress-bar {
+    position: relative; /* 상대 위치 설정 */
+    width: 80%;
+    background-color: #FEEEEE;
+    margin: auto; /* 가운데 정렬 */
+}
+
+.progress {
+    height: 20px;
+    width: 0%;
+    background-color: #F9A7A7;
+    transition: width 0.5s ease;
+}
+
+.progress_icon {
+    position: absolute; /* 절대 위치 설정 */
+    bottom: -80%; /* 아이콘을 progress_bar의 바로 위로 위치시킵니다 */
+    left: 0; /* 시작 부분에 위치 */
+    transition: left 0.5s ease; /* 부드러운 이동을 위한 트랜지션 설정 */
+    /* 아이콘 크기 및 기타 스타일 */
+}
+
+.goal_icon {
+    position: absolute;
+    right: 0; /* 프로그레스 바의 오른쪽 끝에 위치시킵니다 */
+    top: -100%; /* 수직 위치조정 */
+}
+
+.test-container {
+    margin: 20px;
+}
+
+
+.answer-buttons button {
+    padding: 10px 15px;
+    margin: 7px;
+    background-color: #E0EBFC;
+    color: #3762CC;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-family: 'YiSunShinDotumM';
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.answer-buttons button:hover {
+    background-color: #3762CC;
+}
+
+#questionText {
+    font-size: 24px;
+    font-weight : normal;
+    font-family: 'YiSunShinDotumM', serif;
+}
+
+
+#backButton, #nextButton {
+    padding: 10px 15px;
+    margin-top: 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backButton:hover, #nextButton:hover {
+    background-color: #333;
+}
+
+.graph-container {
+    /* Styles for graph container */
+    width: 50%; /* 또는 특정 픽셀 값 */
+    height: auto;
+    margin: auto; /* 가운데 정렬 */
+}

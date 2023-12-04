@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Drug Risk Results</title>
+    <link rel="stylesheet" href="css/final_page_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gaegu&family=Nanum+Gothic+Coding&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>약물 위험 테스트 결과</h1>
+    </header>
+
+    <div id="personalityType"></div>
+
+    <div class="main-container">
+        <div id="personalityTypeChartContainer">
+            <div class = 'backgroundcolor'>
+                <canvas id="personalityTypeChart"></canvas>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="backgroundcolor">
+                <div class="ui-widgets">
+                    <div class="ui-values" id="riskPercentage"></div>
+                    <div id="riskLevel"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+ 
+    <div id="topDrugsInfo"></div>
+
+    <section class="conclusion">
+        <img src="img/conclusion_end.png" alt="conclusion_img" width="500">
+        <button id = 'drugstop', onclick="window.open('https://www.drugfree.or.kr/introduce/index.html?contentsNum=6')">마약 중독 치료 센터 알아보기🔍</button>
+
+    </section>
+
+    <button onclick="window.location.href='index.html'">처음으로 돌아가기</button>
+    <button onclick="shareResults()">결과 공유하기</button>
+
+    <script src="js/final_page_script.js"></script>
+</body>
+</html>

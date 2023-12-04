@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성격 유형 테스트</title>
+    <link rel="stylesheet" href="css/test_page_styles.css"> <!-- Assuming this CSS is compatible with Page 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gaegu&family=Nanum+Gothic+Coding&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>성격 유형 테스트</h1>
+    </header>
+    <div class="progress-bar" id="progressBar">
+        <div class="goal_icon">
+            <img alt="골 아이콘" src="img/finish_line.png" width="40">
+        </div>
+        <div class="progress_icon">
+            <img alt="프로그레스 아이콘" src="img/progress_icon.png" width="60" >
+        </div>
+        <div class="progress" id="progress"></div>
+    </div>
+    <section class="test-container">
+        <div id="questionText" class="question-text"></div>
+        <p></p>
+        <div id="answerButtons" class="answer-buttons"></div>
+    </section>
+    <section class="graph-container" id="graphContainer">
+        <!-- Graph will be inserted here -->
+        <canvas id="myChart"></canvas>
+    </section>
+    <script src="js/test_page_script_modified.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
